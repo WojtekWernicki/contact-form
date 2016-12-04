@@ -1,0 +1,144 @@
+/*
+Author: Wojtek Wernicki
+Author URI: https://github.com/WojtekWernicki
+Repository Name: contact-form
+Repository URI: https://github.com/WojtekWernicki/contact-form
+License: MIT
+License URI: https://github.com/WojtekWernicki/contact-form/LICENSE
+*/
+
+/* Import Lora font from Google Fonts */
+
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700&subset=latin,latin-ext);
+
+/* Selectors */
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Lora', serif;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-size: 36px;
+    padding-bottom: 15px;
+}
+
+label, input, textarea {
+    display: block;
+    font-family: 'Lora', serif;
+}
+
+label {
+    margin: 0 0 10px 10px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    line-height: 150%;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+}
+
+input[type="text"], textarea {
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    border-left: none;
+    border-right: none;
+    -webkit-transition: font 0.3s ease;
+    -moz-transition: font 0.3s ease;
+    -o-transition: font 0.3s ease;
+    -ms-transition: font 0.3s ease;
+        transition: font 0.3 ease;
+}
+
+input[type="submit"] {
+    background-color: inherit;
+    border: 1px solid #999;
+    width: 25%;
+    margin: 0 auto;
+}
+
+input[type="text"]:focus, textarea:focus {
+    font-size: 24px;
+    -webkit-transition: font 0.3s ease;
+    -moz-transition: font 0.3s ease;
+    -o-transition: font 0.3s ease;
+    -ms-transition: font 0.3s ease;
+        transition: font 0.3 ease;
+}
+
+textarea {
+    resize: none;
+    overflow: auto;
+}
+
+/* Classes */
+
+.container {
+    width: 75%;
+    margin: 0 auto;
+    padding: 25px;
+}
+
+.subheader {
+    font-size: 24px;
+    font-style: italic;
+}
+
+.error, .success {
+    width: 100%;
+    margin-bottom: 25px;
+    padding: 10px;
+    font-size: 24px;
+    color: #fff;
+    line-height: 150%;
+    display: none;
+}
+
+.error {
+    background-color: #F32328;
+}
+
+.success {
+    background-color: #161;
+}
+
+/* @media queries */
+
+
+
+@media (max-width: 480px) {
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    input[type="submit"] {
+        width: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 100%;
+    }
+}
