@@ -2,6 +2,8 @@
 
 This contact form is inspired by [Clean Blog](http://startbootstrap.com/template-overviews/clean-blog/) template.
 
+![](img/contact-form.png)
+
 ## Installation
 
 1. Download this repository
